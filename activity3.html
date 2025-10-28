@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Activity 3 - Geothermal Energy Unit</title>
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Inline sidebar layout (same as Activity 1 & 2) -->
+  <style>
+    .layout {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      width: 220px;
+      background: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(12px);
+      border-right: 2px solid rgba(255, 255, 255, 0.4);
+      padding: 30px 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+    }
+
+    .sidebar h2 {
+      color: #003366;
+      font-size: 1.3rem;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .sidebar ul li {
+      margin-bottom: 18px;
+      text-align: center;
+    }
+
+    .sidebar ul li a {
+      display: block;
+      text-decoration: none;
+      color: #003366;
+      font-weight: 600;
+      background: rgba(255,255,255,0.4);
+      padding: 10px 0;
+      border-radius: 12px;
+      transition: all 0.3s;
+    }
+
+    .sidebar ul li a:hover,
+    .sidebar ul li a.active {
+      background: #003366;
+      color: white;
+      box-shadow: 0 0 12px #003366;
+    }
+
+    .main-content {
+      flex: 1;
+      margin-left: 240px;
+      padding: 20px;
+    }
+
+    @media (max-width: 800px) {
+      .sidebar {
+        position: relative;
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid rgba(255,255,255,0.4);
+        display: flex;
+        justify-content: center;
+      }
+      .sidebar ul {
+        display: flex;
+        gap: 15px;
+      }
+      .main-content {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="layout">
+    <!-- 🌿 Sidebar Navigation -->
+    <div class="sidebar">
+      <div>
+        <h2>My Portfolio</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="activity1.html">Activity 1</a></li>
+          <li><a href="activity2.html">Activity 2</a></li>
+          <li><a href="activity3.html" class="active">Activity 3</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 🌋 Main Activity Content -->
+    <div class="main-content">
+      <header>
+        <h1>🌋 Activity 3 — Modular Binary-Cycle Geothermal Power Unit</h1>
+        <p class="subtitle">Harnessing Earth’s Internal Heat for Continuous, Clean Power Generation</p>
+      </header>
+
+<section class="hero">
+  <h2 style="font-size: 1.8rem; margin-bottom: 15px; color: #004d7a;">🌀 Problem Statement</h2>
+  <p style="text-align: justify; line-height: 1.8; font-size: 1.05rem; color: #333; margin: 0 auto; max-width: 900px;">
+    Despite India having over <strong>300 identified geothermal hot spring zones</strong> across states like Ladakh, 
+    Himachal Pradesh, and Jharkhand, the <strong>potential of geothermal energy</strong> remains largely untapped. 
+    Many <strong>remote and tribal villages</strong> located near these hot springs continue to depend on unreliable 
+    diesel-based electricity, facing <strong>frequent power shortages</strong> and high energy costs. According to the 
+    <strong>Geological Survey of India (GSI)</strong> and the <strong>Ministry of Power’s Remote Electrification Survey 2023</strong>, 
+    these areas experience limited infrastructure support despite abundant underground heat resources. 
+    The lack of <strong>localized renewable systems</strong> has hindered rural development and access to reliable power 
+    for homes, schools, and healthcare facilities. This pressing issue highlights the need for a 
+    <strong>decentralized, modular geothermal power system</strong> capable of converting natural heat from the Earth’s crust 
+    into <strong>continuous, clean electricity</strong>—offering a sustainable and low-maintenance alternative to diesel-based grids 
+    in India’s remote regions.
+  </p>
+</section>
+
+
+      <section class="activity-content">
+        <div class="activity-card">
+          <h3>💡 Innovative Solution</h3>
+          <p>
+            The proposed Modular Binary-Cycle Geothermal Power Unit offers a clean, continuous, and sustainable energy solution designed for remote tribal villages located near geothermal hot springs. The system begins at the geothermal well, where naturally heated water at temperatures between 120–150°C is extracted from the Earth's crust. This heat is transferred through a compact heat exchanger to a secondary working fluid with a low boiling point in a binary-cycle (Organic Rankine Cycle) system. The vaporized working fluid drives a turbine-generator to produce electricity, which is then supplied to a local village microgrid powering homes, clinics, and street lights. A condenser and recirculation unit cools and reuses the working fluid, ensuring zero emissions and closed-loop operation. To maintain stable power delivery, a battery storage unit stores excess energy generated during peak operation, ensuring uninterrupted supply during non-active hours. The entire setup is integrated with an IoT-based monitoring and control system that tracks well temperature, turbine output, and pressure levels for safe and efficient performance. This modular geothermal design provides a low-maintenance, eco-friendly alternative to diesel generators while empowering rural communities with reliable, renewable power and supporting India’s sustainable energy mission.
+          </p>
+
+          <h3>🔧 Block Diagram</h3>
+          <div class="diagram-container">
+            <img src="images/geothermal_diagram.png" alt="Geothermal Energy System Diagram" />
+          </div>
+
+<h3>⚙️ Explanation</h3>
+
+<p>
+  <strong>Source of Energy:</strong> This system harnesses <em>geothermal heat</em> from 
+  natural <em>hot water and steam reservoirs</em> found beneath the Earth’s surface. 
+  India hosts more than <strong>300 geothermal hot spring sites</strong>, with 
+  temperatures ranging from 100°C to 150°C, particularly across the 
+  <em>Himalayan and Western Ghat regions</em>. This untapped thermal energy provides 
+  a continuous and reliable renewable source ideal for powering rural settlements.
+</p>
+
+<p>
+  <strong>Conversion Process:</strong> Hot water from the geothermal well transfers its 
+  heat to a <em>secondary working fluid</em> inside a <strong>heat exchanger</strong>. 
+  This binary fluid (usually an organic compound with a low boiling point) vaporizes, 
+  driving a <strong>turbine-generator</strong> assembly to produce electricity. 
+  The vapor is then condensed and recycled in a <em>closed-loop binary cycle</em>, 
+  ensuring sustainable and efficient energy conversion with minimal heat loss.
+</p>
+
+<p>
+  <strong>Output / Utilization:</strong> The generated electricity powers 
+  <em>village microgrids</em>, supplying homes, health centers, and street lighting 
+  in remote and tribal regions. Integrated <strong>battery storage units</strong> 
+  ensure a stable and uninterrupted power supply even during off-peak geothermal activity.
+</p>
+
+<p>
+  <strong>Real-world Relevance:</strong> This modular geothermal system 
+  provides <em>clean, round-the-clock power</em> for rural communities and 
+  drastically reduces diesel generator usage. It supports the 
+  <strong>Geological Survey of India’s Geothermal Mission</strong> and the 
+  <strong>Remote Village Electrification Program</strong> by offering a 
+  <em>low-maintenance, zero-emission energy solution</em> for sustainable development.
+</p>
+
+        </div>
+      </section>
+
+      <footer>
+        © 2025 | Designed by <b>Prabhu Sai Kumbham-RA2311028010012</b> | Renewable Energy Systems Portfolio
+      </footer>
+    </div>
+  </div>
+</body>
+</html>

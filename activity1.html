@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Activity 1 - Solar Microgrid System</title>
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Inline sidebar layout (same as index.html) -->
+  <style>
+    .layout {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      width: 220px;
+      background: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(12px);
+      border-right: 2px solid rgba(255, 255, 255, 0.4);
+      padding: 30px 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+    }
+
+    .sidebar h2 {
+      color: #003366;
+      font-size: 1.3rem;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .sidebar ul li {
+      margin-bottom: 18px;
+      text-align: center;
+    }
+
+    .sidebar ul li a {
+      display: block;
+      text-decoration: none;
+      color: #003366;
+      font-weight: 600;
+      background: rgba(255,255,255,0.4);
+      padding: 10px 0;
+      border-radius: 12px;
+      transition: all 0.3s;
+    }
+
+    .sidebar ul li a:hover,
+    .sidebar ul li a.active {
+      background: #003366;
+      color: white;
+      box-shadow: 0 0 12px #003366;
+    }
+
+    .main-content {
+      flex: 1;
+      margin-left: 240px;
+      padding: 20px;
+    }
+
+    @media (max-width: 800px) {
+      .sidebar {
+        position: relative;
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid rgba(255,255,255,0.4);
+        display: flex;
+        justify-content: center;
+      }
+      .sidebar ul {
+        display: flex;
+        gap: 15px;
+      }
+      .main-content {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="layout">
+    <!-- 🌿 Sidebar Navigation -->
+    <div class="sidebar">
+      <div>
+        <h2>My Portfolio</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="activity1.html" class="active">Activity 1</a></li>
+          <li><a href="activity2.html">Activity 2</a></li>
+          <li><a href="activity3.html">Activity 3</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 🌞 Main Activity Content -->
+    <div class="main-content">
+      <header>
+        <h1>⚡ Activity 1 — Smart VAWT Microgrid for Rural Health Clinic</h1>
+        <p class="subtitle">Decentralized Solar PV-Based Microgrid for Sustainable Rural Electrification</p>
+      </header>
+
+<section class="hero">
+  <h2 style="font-size: 1.8rem; margin-bottom: 15px; color: #004d7a;">🌀 Problem Statement</h2>
+  <p style="text-align: justify; line-height: 1.8; font-size: 1.05rem; color: #333; margin: 0 auto; max-width: 900px;">
+    In many coastal regions of India, <strong>Primary Health Centers (PHCs)</strong> and rural clinics continue to face 
+    <strong>frequent and prolonged power outages</strong>, severely impacting their ability to operate essential medical 
+    equipment such as vaccine refrigerators, oxygen concentrators, and diagnostic tools. According to the 
+    <strong>Ministry of Health and Family Welfare (Rural Health Statistics Report 2023)</strong>, nearly 
+    <strong>70% of PHCs in coastal districts</strong> experience regular electricity disruptions. These clinics often 
+    depend on <strong>diesel generators</strong>, which not only increase operational costs but also contribute to 
+    <strong>air pollution and carbon emissions</strong>. The lack of reliable and affordable power supply compromises 
+    healthcare delivery, emergency response, and patient safety in underserved communities. This critical challenge 
+    calls for a <strong>sustainable, low-maintenance, and renewable power solution</strong> capable of ensuring 
+    <strong>24/7 electricity</strong> without relying on fossil fuels.
+  </p>
+</section>
+
+
+
+      <section class="activity-content">
+        <div class="activity-card">
+          <h3>💡 Innovative Solution</h3>
+          <p>
+       The proposed <b>Smart VAWT Microgrid System</b> harnesses <b>coastal wind energy</b> to provide a 
+      sustainable and uninterrupted power supply for rural health clinics. The system employs a 
+      <b>Vertical Axis Wind Turbine (VAWT)</b> designed for low-speed and variable wind conditions, converting 
+      wind <b>kinetic energy</b> into <b>mechanical energy</b> and subsequently into <b>electrical energy</b> through a generator. 
+      The generated DC power is stored in a <b>battery bank</b> and later converted to AC using a <b>smart inverter and controller</b> 
+      to power essential medical devices such as <b>vaccine refrigerators and oxygen concentrators</b>. An integrated 
+      <b>IoT monitoring system</b> enables real-time tracking of turbine performance, battery charge, and load distribution, 
+      ensuring predictive maintenance and high operational efficiency. This innovative setup significantly 
+      <b>reduces diesel dependency, operational costs, and carbon emissions</b>, providing a reliable and eco-friendly 
+      energy source for healthcare facilities in coastal regions.
+          </p>
+
+          <h3>🔧 Block Diagram</h3>
+          <div class="diagram-container">
+            <img src="images/solar_microgrid.png" alt="Solar Microgrid System Block Diagram" />
+          </div>
+
+<h3>⚙️ Explanation</h3>
+<p>
+  <b>Source of Energy:</b> The proposed system utilizes <b>coastal wind energy</b> as a clean, renewable source. 
+  Coastal regions in India experience consistent wind speeds throughout the year, making them ideal for 
+  decentralized microgrid systems powering rural health centers. The vertical-axis design enables efficient 
+  operation even in turbulent or low-speed winds.<br><br>
+
+  <b>Conversion Process:</b> The <b>Vertical Axis Wind Turbine (VAWT)</b> captures wind’s kinetic energy and converts 
+  it into mechanical rotation. This motion drives a <b>generator</b> that produces <b>direct current (DC)</b> electricity. 
+  The generated DC power is stored in <b>battery units</b> for stable energy supply and then converted into 
+  <b>alternating current (AC)</b> through a <b>smart inverter</b> for distribution to clinic loads. 
+  An integrated <b>IoT monitoring system</b> tracks turbine speed, battery charge, and power output in real time.<br><br>
+
+  <b>Output / Utilization:</b> The system ensures <b>uninterrupted electricity</b> for essential medical equipment such as 
+  <b>refrigerators, oxygen concentrators, and lighting systems</b>. By reducing reliance on diesel generators, it cuts 
+  operational costs and emissions.<br><br>
+
+  <b>Real-world Relevance:</b> This project aligns with India’s <b>MNRE Smart Grid Mission</b> and supports 
+  <b>Sustainable Development Goal 7 (Affordable & Clean Energy)</b>. 
+  It provides 24×7 power to rural health facilities, enabling life-saving operations and promoting a cleaner, 
+  self-sustaining energy future for underserved coastal communities.
+</p>
+
+        </div>
+      </section>
+
+      <footer>
+        © 2025 | Designed by <b>Prabhu Sai Kumbham-RA2311028010012</b> | Renewable Energy Systems Portfolio
+      </footer>
+    </div>
+  </div>
+</body>
+</html>

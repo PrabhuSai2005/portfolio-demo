@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Activity 2 - Biogas Energy System</title>
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Inline sidebar layout (same as index.html & activity1.html) -->
+  <style>
+    .layout {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      width: 220px;
+      background: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(12px);
+      border-right: 2px solid rgba(255, 255, 255, 0.4);
+      padding: 30px 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+    }
+
+    .sidebar h2 {
+      color: #003366;
+      font-size: 1.3rem;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .sidebar ul li {
+      margin-bottom: 18px;
+      text-align: center;
+    }
+
+    .sidebar ul li a {
+      display: block;
+      text-decoration: none;
+      color: #003366;
+      font-weight: 600;
+      background: rgba(255,255,255,0.4);
+      padding: 10px 0;
+      border-radius: 12px;
+      transition: all 0.3s;
+    }
+
+    .sidebar ul li a:hover,
+    .sidebar ul li a.active {
+      background: #003366;
+      color: white;
+      box-shadow: 0 0 12px #003366;
+    }
+
+    .main-content {
+      flex: 1;
+      margin-left: 240px;
+      padding: 20px;
+    }
+
+    @media (max-width: 800px) {
+      .sidebar {
+        position: relative;
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid rgba(255,255,255,0.4);
+        display: flex;
+        justify-content: center;
+      }
+      .sidebar ul {
+        display: flex;
+        gap: 15px;
+      }
+      .main-content {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="layout">
+    <!-- 🌿 Sidebar Navigation -->
+    <div class="sidebar">
+      <div>
+        <h2>My Portfolio</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="activity1.html">Activity 1</a></li>
+          <li><a href="activity2.html" class="active">Activity 2</a></li>
+          <li><a href="activity3.html">Activity 3</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 🔥 Main Activity Content -->
+    <div class="main-content">
+      <header>
+        <h1>🔥 Activity 2 — Zero-Waste biogas Energy System</h1>
+        <p class="subtitle">Zero-Waste Biogas System for Sustainable Fuel and Fertilizer Production</p>
+      </header>
+
+<section class="hero">
+  <h2 style="font-size: 1.8rem; margin-bottom: 15px; color: #004d7a;">🌀 Problem Statement</h2>
+  <p style="text-align: justify; line-height: 1.8; font-size: 1.05rem; color: #333; margin: 0 auto; max-width: 900px;">
+    Across India’s rural and semi-urban dairy farming regions, large amounts of <strong>cattle dung and agricultural waste</strong> 
+    are generated daily, often left to decompose in open areas. A single dairy cow produces nearly <strong>10–15 kg of dung per day</strong>, 
+    meaning even small farms accumulate over a ton of organic waste daily. Improper waste disposal releases <strong>methane gas</strong>, 
+    a potent greenhouse pollutant, and creates sanitation and odor problems that affect nearby communities.  
+    Meanwhile, rising <strong>fertilizer prices</strong> and dependence on <strong>diesel for energy</strong> further strain 
+    rural livelihoods. According to the <strong>Ministry of New & Renewable Energy (MNRE 2024 Biogas Program)</strong> and 
+    the <strong>IPCC AR6 Climate Report</strong>, the potential of <strong>biogas from livestock waste</strong> remains vastly 
+    underutilized. This scenario underscores the urgent need for a <strong>zero-waste energy conversion system</strong> that 
+    transforms biomass into <strong>clean fuel (CBG)</strong> and <strong>organic fertilizer</strong>, creating economic value 
+    while reducing pollution and supporting India’s <strong>Waste-to-Wealth Mission</strong>.
+  </p>
+</section>
+
+
+      <section class="activity-content">
+        <div class="activity-card">
+          <h3>💡 Innovative Solution</h3>
+          <p>
+The proposed Zero-Waste Biogas Energy System transforms cattle dung into clean and renewable energy while promoting a circular rural economy. The system begins at the cattle farm, where dung is collected and mixed with water in a 1:1 ratio in the collection and mixing unit to form a slurry. This slurry is fed into an anaerobic digester, where microbial activity breaks down organic matter, producing biogas (methane-rich CBG) and digestate slurry. The biogas undergoes purification and compression to remove impurities like CO₂, H₂S, and moisture, resulting in high-quality Compressed Biogas (CBG) that can be used for cooking, power generation, or vehicle fuel. Meanwhile, the leftover digestate is processed in a slurry composting unit to produce organic fertilizer, reducing chemical dependency and supporting sustainable agriculture. A Smart IoT Monitoring System tracks parameters such as pH, temperature, gas flow, and pressure, ensuring safe, efficient, and real-time operation. This integrated design enables zero waste generation, dual income opportunities from both CBG and fertilizer, and substantial reductions in methane emissions and air pollution, making it an ideal waste-to-energy solution for rural communities.
+          </p>
+
+          <h3>🔧 Block Diagram</h3>
+          <div class="diagram-container">
+            <img src="images/biogas_diagram.png" alt="Biogas Energy System Block Diagram" />
+          </div>
+
+<h3>⚙️ Explanation</h3>
+<p>
+  <strong>Source of Energy:</strong> The system utilizes <em>dairy farm waste</em> and 
+  <em>agricultural residues</em> as the main sources of biomass. Each dairy cow produces 
+  around 10–15 kg of dung daily, which becomes a valuable feedstock for sustainable 
+  energy generation in rural communities.
+</p>
+
+<p>
+  <strong>Conversion Process:</strong> The collected cattle dung is mixed with water in 
+  a 1:1 ratio and fed into an <em>anaerobic digester</em>, where microorganisms decompose 
+  organic matter in the absence of oxygen. This process generates <em>biogas</em> 
+  (a mixture of methane and carbon dioxide) and a nutrient-rich slurry. The raw gas 
+  undergoes <em>purification and compression</em> to form <strong>Compressed Biogas (CBG)</strong>, 
+  while the slurry is composted into <strong>organic fertilizer</strong>.
+</p>
+
+<p>
+  <strong>Output / Utilization:</strong> The purified CBG serves as a clean and renewable 
+  fuel for <em>cooking, power generation, and vehicle applications</em>. The composted 
+  slurry provides <em>organic fertilizer</em> to enrich soil health, reducing dependence 
+  on chemical fertilizers.
+</p>
+
+<p>
+  <strong>Real-world Relevance:</strong> This zero-waste model addresses the 
+  <em>health and environmental impacts of open dumping</em> and 
+  <em>methane emissions</em>. It supports the 
+  <strong>Waste-to-Wealth Mission</strong> and the 
+  <strong>MNRE Biogas Programme</strong> by providing dual benefits — clean energy and 
+  rural income generation. Through <em>IoT monitoring</em> of temperature, pH, and gas flow, 
+  the system ensures efficient biogas production and promotes a sustainable rural economy.
+</p>
+
+        </div>
+      </section>
+
+      <footer>
+        © 2025 | Designed by <b>Prabhu Sai Kumbham-RA2311028010012</b> | Renewable Energy Systems Portfolio
+      </footer>
+    </div>
+  </div>
+</body>
+</html>

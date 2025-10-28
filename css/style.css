@@ -1,0 +1,386 @@
+/* 🌿 General Page Setup */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #b3ffab, #12fff7);
+  color: #222;
+  overflow-x: hidden;
+}
+
+/* 🌍 Header */
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+}
+header h1 {
+  font-size: 2.5rem;
+  color: #003366;
+  margin-bottom: 10px;
+}
+header .subtitle {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* 🧭 Navigation Bar */
+nav {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+}
+nav ul li {
+  margin: 0 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #003366;
+  font-weight: 600;
+  transition: all 0.3s;
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+nav ul li a:hover, nav ul li a.active {
+  background: #003366;
+  color: white;
+  box-shadow: 0 0 10px #003366;
+}
+
+/* 🌞 Hero Section */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #ffffff44, #ffffff11);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  margin: 30px auto;
+  width: 80%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.hero h2 {
+  color: #003366;
+  font-size: 2rem;
+}
+.hero p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #222;
+}
+.btn {
+  display: inline-block;
+  background: #003366;
+  color: white;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  margin-top: 20px;
+  transition: all 0.3s;
+}
+.btn:hover {
+  background: #0059b3;
+  box-shadow: 0 0 10px #003366;
+}
+
+/* 🪴 Cards Section */
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px;
+}
+.card {
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: center;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+.card img {
+  width: 100%;
+  border-radius: 15px;
+  height: 180px;
+  object-fit: cover;
+}
+.card h3 {
+  color: #003366;
+  margin-top: 15px;
+}
+.card p {
+  font-size: 0.95rem;
+  color: #333;
+}
+.btn-small {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 18px;
+  background: #003366;
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.btn-small:hover {
+  background: #0059b3;
+}
+
+/* 🌈 Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  font-size: 0.9rem;
+  color: #003366;
+  border-top: 2px solid rgba(255, 255, 255, 0.4);
+}
+/* 🌞 Activity Page Enhancements */
+.activity-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 20px;
+}
+
+.activity-card {
+  width: 85%;
+  max-width: 1000px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 25px;
+  padding: 30px 40px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(12px);
+  animation: fadeIn 1s ease;
+}
+
+.activity-card h3 {
+  color: #003366;
+  margin-top: 25px;
+  border-bottom: 2px solid #00336633;
+  padding-bottom: 5px;
+}
+
+.activity-card p {
+  text-align: justify;
+  font-size: 1rem;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* 🖼️ Diagram Styling */
+.diagram-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.diagram-container img {
+  width: 100%;
+  max-width: 850px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.diagram-container img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* ✨ Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== Container ===== */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ===== Header (refined) ===== */
+.site-header {
+  background: rgba(255,255,255,0.18);
+  backdrop-filter: blur(8px);
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.14);
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.brand h1 {
+  margin: 0;
+  font-size: 1.6rem;
+  color: #0b3a66;
+}
+.brand .subtitle {
+  margin: 2px 0 0;
+  font-size: 0.95rem;
+  color: #0b3a66aa;
+}
+
+/* ===== Navigation ===== */
+.main-nav ul {
+  display: flex;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.main-nav a {
+  padding: 8px 14px;
+  color: #003366;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 12px;
+  transition: all .25s ease;
+}
+.main-nav a:hover {
+  background: #003366;
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(0,83,153,0.18);
+}
+.main-nav a.active {
+  background: #003366;
+  color: #fff;
+  box-shadow: 0 8px 28px rgba(0,83,153,0.18);
+}
+
+/* ===== Hero ===== */
+.hero {
+  margin: 28px auto;
+  padding: 36px 0;
+}
+.hero-inner {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.hero-text {
+  flex: 1 1 420px;
+}
+.hero-text h2 {
+  margin: 0 0 12px;
+  color: #073b5a;
+  font-size: 1.9rem;
+}
+.hero-text p {
+  color: #073b5a99;
+  line-height: 1.6;
+}
+.hero-visual {
+  flex: 0 1 240px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* ===== Cards grid ===== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 26px;
+  padding: 26px 0 60px;
+  align-items: start;
+}
+
+/* Card */
+.card {
+  background: rgba(255,255,255,0.52);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(3,36,66,0.12);
+  transition: transform .28s ease, box-shadow .28s ease;
+}
+.card:hover { transform: translateY(-8px); box-shadow: 0 18px 40px rgba(3,36,66,0.16); }
+
+.card-media img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+/* Card body */
+.card-body {
+  padding: 18px;
+}
+.card-body h3 {
+  margin: 0 0 8px;
+  color: #0b3a66;
+}
+.card-body p {
+  margin: 0 0 12px;
+  color: #073b5a88;
+  font-size: 0.95rem;
+}
+
+/* Buttons */
+.btn {
+  display:inline-block;
+  background:#003366;
+  color:#fff;
+  padding:10px 18px;
+  border-radius: 26px;
+  text-decoration:none;
+  font-weight:600;
+}
+.btn-small {
+  display:inline-block;
+  background:#003366;
+  color:#fff;
+  padding:8px 14px;
+  border-radius: 18px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* Footer */
+.site-footer {
+  padding: 18px 0;
+  text-align: center;
+  color: #0b3a66aa;
+  border-top: 1px solid rgba(255,255,255,0.12);
+}
+
+/* small fadeIn effect for main sections */
+.activity-card, .card, .hero { animation: fadeIn 0.8s ease; }
+
+/* ensure images not blocked by CORS or old cache */
+img { image-rendering: auto; -webkit-user-drag: none; user-select: none; }
+
+/* Responsive tweak */
+@media (max-width: 700px) {
+  .header-inner { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .hero-text h2 { font-size: 1.4rem; }
+  .card-media img { height: 160px; }
+}
+
+/* reuse fadeIn */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
