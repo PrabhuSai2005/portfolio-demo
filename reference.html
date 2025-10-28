@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>References | Renewable Energy Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #e8f5e9);
+      color: #003366;
+    }
+
+    .layout {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      width: 220px;
+      background: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(12px);
+      border-right: 2px solid rgba(255, 255, 255, 0.4);
+      padding: 30px 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+    }
+
+    .sidebar h2 {
+      color: #003366;
+      font-size: 1.3rem;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .sidebar ul li {
+      margin-bottom: 18px;
+      text-align: center;
+    }
+
+    .sidebar ul li a {
+      display: block;
+      text-decoration: none;
+      color: #003366;
+      font-weight: 600;
+      background: rgba(255,255,255,0.4);
+      padding: 10px 0;
+      border-radius: 12px;
+      transition: all 0.3s;
+    }
+
+    .sidebar ul li a:hover,
+    .sidebar ul li a.active {
+      background: #003366;
+      color: white;
+      box-shadow: 0 0 12px #003366;
+    }
+
+    .main-content {
+      flex: 1;
+      margin-left: 240px;
+      padding: 50px 60px;
+      animation: fadeIn 0.6s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      color: #004c8c;
+      margin-bottom: 20px;
+    }
+
+    .ref-section {
+      background: white;
+      border-radius: 16px;
+      padding: 30px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    .ref-section h2 {
+      color: #003366;
+      margin-bottom: 15px;
+      font-size: 1.4rem;
+    }
+
+    .ref-section ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .ref-section li {
+      margin-bottom: 12px;
+      line-height: 1.6;
+    }
+
+    .ref-section a {
+      color: #004c8c;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+
+    .ref-section a:hover {
+      color: #0066cc;
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      color: #003366;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 800px) {
+      .sidebar {
+        position: relative;
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid rgba(255,255,255,0.4);
+        display: flex;
+        justify-content: center;
+      }
+
+      .sidebar ul {
+        display: flex;
+        gap: 15px;
+      }
+
+      .main-content {
+        margin-left: 0;
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="layout">
+    <!-- 🌿 Sidebar Navigation -->
+    <div class="sidebar">
+      <div>
+        <h2>My Portfolio</h2>
+        <ul>
+          <li><a href="reference.html" class="active">References</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="activity1.html">Activity 1</a></li>
+          <li><a href="activity2.html">Activity 2</a></li>
+          <li><a href="activity3.html">Activity 3</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 📚 References Page Content -->
+    <div class="main-content">
+      <h1>📚 Research & Reference Sources</h1>
+      <p>Below are key academic and government references that informed the development of each renewable energy activity in this portfolio.</p>
+
+      <!-- Activity 1 -->
+      <div class="ref-section">
+        <h2>🔹 Activity 1 — Wind Energy / Rural Clinics</h2>
+        <ul>
+          <li>“Reduced health services at under-electrified primary health centers” — <em>PLOS</em>  
+            <br>🔗 <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8177862/" target="_blank">https://pmc.ncbi.nlm.nih.gov/articles/PMC8177862/</a>
+          </li>
+          <li>“Decentralised Renewable Energy for SDG7” — <em>Ministry of Power, Government of India</em>  
+            <br>🔗 <a href="https://powermin.gov.in/sites/default/files/uploads/Decentralised_Renewable_Energy.pdf" target="_blank">https://powermin.gov.in/.../Decentralised_Renewable_Energy.pdf</a>
+          </li>
+          <li>“Energy for Rural Health Centers” — <em>Energypedia / NREL</em>  
+            <br>🔗 <a href="https://docs.nrel.gov/docs/legosti/fy98/25233.pdf" target="_blank">https://docs.nrel.gov/docs/legosti/fy98/25233.pdf</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Activity 2 -->
+      <div class="ref-section">
+        <h2>🔹 Activity 2 — Biomass / Biogas System</h2>
+        <ul>
+          <li>“National Biogas Programme” — <em>Ministry of New and Renewable Energy</em>  
+            <br>🔗 <a href="https://mnre.gov.in/en/bio-gas/" target="_blank">https://mnre.gov.in/en/bio-gas/</a>
+          </li>
+          <li>“FAQs on Biogas Potential in India” — <em>MNRE</em>  
+            <br>🔗 <a href="https://mnre.gov.in/en/faq/" target="_blank">https://mnre.gov.in/en/faq/</a>
+          </li>
+          <li>“Cow dung management, biogas production…” — <em>ScienceDirect</em>  
+            <br>🔗 <a href="https://www.sciencedirect.com/science/article/pii/S2772912524000745" target="_blank">https://www.sciencedirect.com/.../S2772912524000745</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Activity 3 -->
+      <div class="ref-section">
+        <h2>🔹 Activity 3 — Geothermal Power Plant</h2>
+        <ul>
+          <li>“Geothermal energy is a recognized renewable resource...” — <em>Nature</em>  
+            <br>🔗 <a href="https://www.nature.com/articles/s41598-025-19120-5" target="_blank">https://www.nature.com/articles/s41598-025-19120-5</a>
+          </li>
+          <li>“Geothermal Power Potential in India” — <em>Insights IAS</em>  
+            <br>🔗 <a href="https://www.insightsonindia.com/2024/08/07/geothermal-power-potential-in-india/" target="_blank">https://www.insightsonindia.com/.../geothermal-power-potential-in-india/</a>
+          </li>
+          <li>“Geothermal Resource: World Scenario and India’s Outlook” — <em>Pandit Deendayal Petroleum University</em>  
+            <br>🔗 <a href="https://www.researchgate.net/publication/390448957_Geothermal_Resource_World_Scenario_and_India's_Outlook" target="_blank">https://www.researchgate.net/..._India's_Outlook</a>
+          </li>
+        </ul>
+      </div>
+
+      <footer>
+        © 2025 | Designed by <b>Prabhu Sai Kumbham</b> | Renewable Energy Systems Portfolio
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
